@@ -1,18 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      MrHonor
-    </ion-title>
+    <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">MrHonor</ion-title>
+      <ion-title size="large">Login - MrHonor</ion-title>
     </ion-toolbar>
   </ion-header>
-
 
   <ion-card>
     <ion-card-header>
@@ -22,8 +19,17 @@
     </ion-card-header>
 
     <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
+      <ion-item>
+        <ion-input placeholder="username"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-input placeholder="password" type="password">
+          <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input>
+      </ion-item>
+      <br>
+      <ion-button (click)="logMeIn()">login</ion-button>
     </ion-card-content>
   </ion-card>
-
 </ion-content>
